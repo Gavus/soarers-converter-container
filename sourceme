@@ -1,0 +1,34 @@
+#/bin/bash
+
+IMAGE_NAME="soarers-converter"
+
+function get_cont_mgr() {
+	local cont_mgr=""
+
+	if test "$(which podman)"; then
+		cont_mgr="podman"
+	elif test "$(which docker)"; then
+		cont_mgr="docker"
+	else 
+	  2& > echo "Please install docker or podman"
+	fi
+
+	echo "$cont_mgr"
+}
+
+function build() {
+	local cont_mgr="$(get_cont_mgr)"
+	"$cont_mgr" build -f Containerfile -t "$IMAGE_NAME:latest"
+}
+
+function run() {
+	local cont_mgr="$(get_cont_mgr)"
+	"$cont_mgr" run \
+		--rm \
+		-it \
+		-v "$PWD:$PWD":z \
+		--workdir "$PWD" \
+		"$IMAGE_NAME:latest" \
+		sh \
+		$@
+}
