@@ -9,7 +9,7 @@ function get_cont_mgr() {
 		cont_mgr="podman"
 	elif test "$(which docker)"; then
 		cont_mgr="docker"
-	else 
+	else
 	  2& > echo "Please install docker or podman"
 	fi
 
@@ -24,10 +24,11 @@ function build() {
 function run() {
 	local cont_mgr="$(get_cont_mgr)"
 	"$cont_mgr" run \
+		--privileged \
 		--rm \
+		--workdir "$PWD" \
 		-it \
 		-v "$PWD:$PWD":z \
-		--workdir "$PWD" \
 		"$IMAGE_NAME:latest" \
 		sh \
 		$@
