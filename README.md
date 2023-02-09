@@ -1,19 +1,18 @@
 # Soarers Converter Containerized
 
-Soarer's Converter is used to convert old keyboard is used to convert old
-keyboard.
+The Soarer's Converter takes output data of an old non-USB keyboard and
+translates it to USB's standard.
 
 Here is a [guide](https://sharktastica.co.uk/guides/soarers_1#HowToGet).
 
-The linux tools are built in 32bit, and require more 32bit libraries. That's not
+The linux tools are built in 32bit, and depends on  32bit libraries. That's not
 always fun to install, which is why this container image is created.
 
-The container image installs the necessary dependencies needed by Soarer's
-tools.
+The container image installs the necessary dependencies for Soarer's tools.
 
 ## How to
 
-Source 'sourceme' in order to use my bash functions I've made to simplify using
+Source 'sourceme' in order to use the bash functions I've made to simplify using
 a container manager.
 
 ```
