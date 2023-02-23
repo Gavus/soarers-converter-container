@@ -37,7 +37,7 @@ run
 #### Build config:
 
 ```
-scas ./config/m122.sc ./m122
+scas ./config/ibm_m122.sc ./m122
 ```
 
 #### Update soarer's converter:
@@ -51,7 +51,7 @@ scwr ./m122
 ```
 build
 run
-scas ./config/m122.sc ./m122
+scas ./config/ibm_m122.sc ./m122
 scwr ./m122
 ```
 
