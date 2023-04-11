@@ -16,36 +16,35 @@
 # `-------' `-----'   `---------------------------------------'   `-----'     `---'     `---------------'
 
 remapblock
-	# Numpad:
-	ESC		NUM_LOCK
-	NUM_LOCK	PAD_SLASH
-	SCROLL_LOCK	PAD_ASTERIX
-	EXTRA_SYSRQ	PAD_MINUS
-	PAD_ASTERIX	PAD_PLUS
-	PAD_MINUS	PAD_PLUS
-	PAD_PLUS	PAD_ENTER
-	# Numpad upper right corner
-
-	# Left keys:
-	EXTRA_F1	CAPS_LOCK
-	EXTRA_F2	A
-	EXTRA_F3	MEDIA_VOLUME_UP
-	EXTRA_F4	MEDIA_PREV_TRACK
-	EXTRA_F5	MEDIA_VOLUME_DOWN
-	EXTRA_F6	MEDIA_NEXT_TRACK
-	EXTRA_F7	MEDIA_MUTE
-	EXTRA_F8	MEDIA_PLAY_PAUSE
-	EXTRA_F9	LGUI
-	EXTRA_F10	MEDIA_CALCULATOR
-
-	# Replace Caps_lock with Esc
-	CAPS_LOCK	ESC
-
-	# Key in the middle of the arrow keys.
-	LANG_4	DOWN
-	DOWN	RGUI
-
-	# Fix ' and *
-	EUROPE_1	BACKSLASH
+  # Numpad:
+  ESC NUM_LOCK
+  NUM_LOCK PAD_SLASH
+  SCROLL_LOCK PAD_ASTERIX
+  EXTRA_SYSRQ PAD_MINUS
+  PAD_ASTERIX PAD_PLUS
+  #PAD_MINUS PAD_PLUS
+  PAD_PLUS PAD_ENTER
+  # Numpad upper right corner
+ 
+  # Left keys:
+  EXTRA_F1 F1
+  EXTRA_F2 F2
+  EXTRA_F3 F3
+  EXTRA_F4 F4
+  EXTRA_F5 F5
+  EXTRA_F6 F6
+  EXTRA_F7 F7
+  EXTRA_F8 F8
+  EXTRA_F9 LGUI
+  EXTRA_F10 F10
+ 
+  # Replace Caps_lock with Esc
+  CAPS_LOCK ESC
+ 
+  # Key in the middle of the arrow keys.
+  LANG_4 DOWN
+ 
+  # Fix ' and *
+  EUROPE_1 BACKSLASH
 endblock
 
